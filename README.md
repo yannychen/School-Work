@@ -49,6 +49,8 @@ newNode’s chStr <- concatenate chStr of the first node and chStr of the second
 
 
 
+
+
 K-Mean Clustering (Java)-
 
 step 0:  
