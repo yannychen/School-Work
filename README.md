@@ -28,3 +28,33 @@ newNode’s chStr <- concatenate chStr of the first node and chStr of the second
 3.4: Root <- newNode
 
 
+K-Mean Clustering (Java)-
+step 0:  
+- inFile  Open the input file
+- K(k groups), numRow, numCol numPts  get from inFile.
+- imageArray  Dynamically allocate a 2-D arrays, size numRows X numCols.
+	- pointSet  Dynamically allocate the point set, size of numPts  
+	- Kcentroids[K]  Dynamically allocate the K centroids struct.
+ 	
+Step 1: call loadPointSet 
+Step 2: call assignLabel	   
+Step 3: call mapPoint2Image 
+Step 4: call displayImage // output to output-2
+
+step 5: 5.1:  changeLabel  0
+5.2:  Go thru the entire pointSet struct array to compute the centroids of each of the K clusters. Store the computed centroids in each Kcentroids[i], i from 1 to K.
+
+step 6: 6.1: for each point, p, in the pointSet array
+	   	  compute the distance, dist(p,ci), from 
+		  	p to the centroids of each Kcentroids[i], i = 1 to K
+	      6.2: min_i <-- determine which dist(p,ci) is minimum		
+        6.3: if min_i’s Label is not the same as p's Label change p's label to min_i’s label and increment changeLabel ++ 
+
+step 7: repeat step 6 until all points in pointSet are processed.
+
+Step 8: repeat step 3 to step 7 while changeLabel > 0 
+
+Step 9: Output the info of pointSet to Output-1 file.
+
+Step 10: close all files.
+
