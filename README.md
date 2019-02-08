@@ -1,6 +1,4 @@
-School-Work
-
-HuffmanCoding project (Java):
+## HuffmanCoding project (Java):
   Given a text file, compress the file by creating least bit for most frequent appeared characters and more bit for least frequent appeared characters.
 
 Huffman Coding Algorithm:
@@ -49,9 +47,7 @@ newNode’s chStr <- concatenate chStr of the first node and chStr of the second
 
 
 
-
-
-K-Mean Clustering (Java):
+## K-Mean Clustering (Java):
    popular for cluster analysis in data mining. Given data points and k number of clusters, randomly partition data points into k groups and assign labels to points with 1-k depends on which cluster they are in. Compute centriods for each group, then compute minimum distance between each point to all the centroids. Resigns point's label to minimum centroid's label if its label is different, keep the same label otherwise. 
 
 step 0:  
